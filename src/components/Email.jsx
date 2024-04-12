@@ -18,22 +18,22 @@ const Email = () => {
 
   return (
     <>
-    <p>Be the first to know! Share your email and We'll notify you when it's live</p>
-    <div className={styles.container}>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="email"></label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          placeholder="Please enter your email id"
-          className={styles.inputField} // Apply input field styles
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <button type="submit" className={styles.submitButton}>Notify Me</button>
-      </form>
-      {error && <p className={styles.errorMsg}>{error}</p>}
-    </div>
+      <p>Be the first to know! Share your email and We'll notify you when it's live</p>
+      <div >
+        <form className={styles.container} onSubmit={handleSubmit}>
+          <label htmlFor="email"></label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            placeholder="Please enter your email id"
+            className={styles.inputField} // Apply input field styles
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <button type="submit" className={styles.submitButton}>Notify Me</button>
+        </form>
+        {error && <p className={styles.errorMsg}>{error}</p>}
+      </div>
     </>
   );
 };

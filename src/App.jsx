@@ -25,7 +25,7 @@ function App() {
           <center>
             <div className="container">
               <Heading className="heading"></Heading>
-              <ShinyText ></ShinyText>   
+              <ShinyText className="shinyText"></ShinyText>   
               <Timer></Timer>
               {/* <Msg></Msg> */}
               <Email></Email>

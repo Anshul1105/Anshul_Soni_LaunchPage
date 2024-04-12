@@ -1,0 +1,66 @@
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.svg-wrapper {
+  position: relative;
+}
+
+.show {
+  animation: show 300ms ease-in-out forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text2 {
+  animation: text2 3000ms ease-in-out forwards;
+}
+
+@keyframes text2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.text3 {
+  position: relative;
+}
+
+.star {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  animation: star 600ms forwards;
+}
+
+@keyframes star {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text4 {
+  position: relative;
+}
+
+.star {
+  display: none;
+}
