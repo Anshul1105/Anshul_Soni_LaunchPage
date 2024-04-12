@@ -1,18 +1,21 @@
-h1{
-    font-size: 40px;
-}
+/* h1{
+    font-size: 60px;
+} */
 .header-container {
     display: flex;
     align-items: center;
   }
   .logo {
-    width: 50px; /* Adjust size as needed */
+    width: 80px; /* Adjust size as needed */
     height: auto;
     margin-right: 10px;
+    
   }
   .container{
+    font-size: 1.8rem ;
     
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing:  2.5px;
   }
