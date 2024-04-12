@@ -1,7 +1,7 @@
 import styles from './Title.module.css'
 const Title = () =>{
     return<>
-        <div>THE <span className={styles.highlight}>PRODUCT</span> PLATFORM</div>
+        <div className={styles.title}>THE <span className={styles.highlight}>PRODUCT</span> PLATFORM</div>
     </>
 
 }

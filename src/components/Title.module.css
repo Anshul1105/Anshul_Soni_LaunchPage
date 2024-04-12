@@ -1,6 +1,13 @@
 .highlight {
-    
+  
     padding: 2px;
     color: white;
     background-color: black;
+  }
+.title{
+  letter-spacing: 2.5px;
+    margin: 2rem;
+    padding: 4px;
+    font-weight: 600;
+    font-size: 1.3rem;
   }
