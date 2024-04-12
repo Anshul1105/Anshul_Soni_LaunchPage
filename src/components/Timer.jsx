@@ -7,7 +7,7 @@ const Timer = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const deadline = "13 April 2024 00:00:00";
+  const deadline = "16 April 2024 00:00:00";
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
@@ -35,7 +35,7 @@ const Timer = () => {
           <span className={styles.timerLabel}>Hours</span>
         </div>
       )}
-      {hours>0 && (
+      {hours > 0 && (
         <div className={styles.timerItem}><h1>:</h1>
         </div>
       )}
@@ -44,7 +44,7 @@ const Timer = () => {
         <span className={styles.timerLabel}>Minutes</span>
       </div>
       <div className={styles.timerItem}><h1>:</h1>
-        </div>
+      </div>
       <div className={styles.timerItem}>
         <h1 className={styles.timerValue}>{seconds < 10 ? "0" + seconds : seconds}</h1>
         <span className={styles.timerLabel}>Seconds</span>
